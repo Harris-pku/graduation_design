@@ -1,0 +1,177 @@
+[
+    {
+        "Id": 7464261,
+        "Title": "系统界面的代码及运行界面",
+        "Body": "设计程序围绕餐厅点餐系统的功能完成以下内容:程序运行后输出显示预约点餐的相关信息，包括点餐系统名称、店地址等，要求用结构体实现。系统名称:XXXX。饭店名:XXXx。饭店地址:XXX。用餐人数: XXXX。预约人姓名: XXXX 预定包厢名首字母:XXX。"
+    },
+    {
+        "Id": 7464262,
+        "Title": "window10 下使用 intellij IDEA2019版本调试 erlang代码 报错",
+        "Body": "出现如何下错误: \"C:\\Program Files\\erl10.5\\bin\\erl.exe\" -pa C:\\Users\\xxxxxx\\AppData\\Local\\Temp\\intellij_erlang_debugger_ -pa D:/xxx/test/test_erlang/ebin -pa D:/xxx/test/test_erlang -run debugnode main 51119 -noshell -s init stop ** Invalid beam file or no abstract code: \"D:\\xxx\\test\\test_erlang\\src\\hello.erl\""
+    },
+    {
+        "Id": 7464263,
+        "Title": "求解三个整数中的最大值，程序如下，请帮我看看哪里有问题，要求要使用调用函数?",
+        "Body": ""
+    },
+    {
+        "Id": 7464264,
+        "Title": "arcmap中怎么生成各个拐点（界址点）坐标文件",
+        "Body": "arcmap中怎么生成各个拐点（界址点）坐标文件"
+    },
+    {
+        "Id": 7464265,
+        "Title": "qtav怎么全屏无边框显示",
+        "Body": "使用QTAV开发视频播放器，使用的自定义标题栏，播放一切正常，想实现鼠标双击全屏功能，但是显示的不是视频窗口全屏： 显示如下"
+    },
+    {
+        "Id": 7464266,
+        "Title": "java下载文件时，没有文件路径怎么下载？",
+        "Body": "常用的下载都是如下方式，先读到输入流，然后再输出到本地。InputStream fis = new BufferedInputStream(new FileInputStream(path)); 现在我是通过将html格式转换，直接生成了一个File file，这样就没有文件路径，要怎么把这个file下载下来或者保存到服务器？"
+    },
+    {
+        "Id": 7464269,
+        "Title": "怎么用JAVA把这个图形页面正确展示出来",
+        "Body": ""
+    },
+    {
+        "Id": 7464271,
+        "Title": "Excel pandas，无法进行merge",
+        "Body": "Excel pandas导入 分列每一列数据后，截取两列数据，为啥有一列数据是为浮点数据，无法进行merge"
+    },
+    {
+        "Id": 7464272,
+        "Title": "如何使用scipy.optimize.minimize来直接对方程组进行优化求解？",
+        "Body": "最近在做基于tdoa的室内目标定位的研究，主要是做chan算法定位方面的东西，但是做了实验之后发现效果不太稳定。师哥发给我一份他改写的scipy.optimize.minimize的函数，说是用这个就可以定出位置，然后让我好好看一看，最好能看懂，如下（注释是我自己写的，不知道都对不对）"
+    },
+    {
+        "Id": 7464273,
+        "Title": "指针数组或数组作实参时，为何必须传首地址，而不能传第二或第三元素的地址？",
+        "Body": "指针数组作形参，对应的另一个已赋值的指针数组作实参时，为何必须传首地址，而不能传第二或第三元素的地址？"
+    },
+    {
+        "Id": 7464277,
+        "Title": "关于线程状态，输出结果中为什么会出现多个RUNNABLE",
+        "Body": ""
+    },
+    {
+        "Id": 7464279,
+        "Title": "为什么在安卓studio上写的app可在手机平板上完美横屏显示",
+        "Body": "为什么在安卓studio上写的app可在手机平板上完美横屏显示，自动适配呢，反而其他的一些常见的应用不可以？"
+    },
+    {
+        "Id": 7464280,
+        "Title": "我找到了解决前面问题的代码，但是分数高低与总成绩哪里我该怎么加上去，我也不懂怎么加",
+        "Body": "#include <stdio.h> #include <stdlib.h> #include <string.h> #define SERIALLEN 20 #define COURSENUM 3 typedef struct { char course[SERIALLEN]; float score; }_courseInfo; typedef struct _stuinfo { char serial[SERIALLEN]; char name[SERIALLEN]; char sex[SERIALLEN]; _courseInfo courseInfo[COURSENUM]; struct _stuinfo *next; }stuinfo; int main(int argc, char **argv) { stuinfo *head=NULL,*ptr=NULL,*s=NULL; char str[SERIALLEN]; int cycle=1; int i=0; memset(str,0,SERIALLEN); printf(\"建立学生信息：\n\"); head=(stuinfo *)calloc(1,sizeof(stuinfo)); if(!head) { perror(\"申请空间失败，没有足够内存。\"); return -1; } ptr=head; while(cycle) { puts(\"输入学生学号(0退出):\"); scanf(\"%s\",str); if(strcmp(str,\"0\")) //如果学号为0，则退出链表的创建 { s=(stuinfo *)calloc(1,sizeof(stuinfo)); if(!ptr) { perror(\"申请空间失败，没有足够内存。\"); return -1; } memset(s->serial,0,SERIALLEN); strcpy(s->serial,str); memset(s->name,0,SERIALLEN); puts(\"输入姓名:\"); scanf(\"%s\",s->name); memset(s->sex,0,SERIALLEN); puts(\"输入性别:\"); scanf(\"%s\",s->sex); for(i=0;i<COURSENUM;i++) { memset(s->courseInfo[i].course,0,SERIALLEN); puts(\"输入课程名称:\"); scanf(\"%s\",s->courseInfo[i].course); s->courseInfo[i].score=0.0f; puts(\"输入课程分数:\"); scanf(\"%f\",&(s->courseInfo[i].score)); } ptr->next=s; ptr=s; } else cycle=0; } ptr->next=NULL; ptr=head; head=head->next; free(ptr); //head=linkSort(head); ptr=head; printf(\"学号\t姓名\t性别\"); for(i=0;i<COURSENUM;i++) printf(\"\t课程[%d]\",i); printf(\"\n\"); while(ptr!=NULL) { printf(\"%s\t%s\t%s\",ptr->serial,ptr->name,ptr->sex); for(i=0;i<COURSENUM;i++) printf(\"\t%s[%.2f]\",ptr->courseInfo[i].course,ptr->courseInfo[i].score); printf(\"\n\"); ptr=ptr->next; } return 0; }"
+    },
+    {
+        "Id": 7464281,
+        "Title": "这个正则表达式把我整不会了.......求完整代码",
+        "Body": "对用户输入的身份证号码进行正则校验，查看输入的身份证号码是否合法，当你输入完毕后，离开输入框失去文本框的焦点时会触发正则校验，如果输入正确则输入下一项，如果输入错误则会提示“身份证输入不合法！”，并清空输入框，让用户重新输入。"
+    },
+    {
+        "Id": 7464282,
+        "Title": "android开发怎么实现点击屏幕添加marker？",
+        "Body": "最近在学习地图开发 试过百度地图和高德地图 就 如何实现手点击一下，添加一个marker？ 求助大佬"
+    },
+    {
+        "Id": 7464287,
+        "Title": "Cannot read property 'query' of undefined",
+        "Body": "当mysql连接js文档最后一行为exports.query = query，就报throw err; // Rethrow non-MySQL errors ^ TypeError: Cannot read property 'query' of undefined 求解 当把图一最后一行为module.exports= query，就报db.query is not a function"
+    },
+    {
+        "Id": 7464288,
+        "Title": "tomcat中catalina加载不出来",
+        "Body": ""
+    },
+    {
+        "Id": 7464289,
+        "Title": "python利用百度ai的文字识别无法得到words_result",
+        "Body": "一个月前还能使用的程序最近突然报错 完全不知道哪里出问题了"
+    },
+    {
+        "Id": 7464291,
+        "Title": "C语言 如何完成使用按引用传递/指针添加并完成TODO的问题，佬大jiujiu",
+        "Body": "请问一下如何完成使用按引用传递/指针添加并完成TODO的这道题，希望有大佬可以帮我编程一下，学习一下是怎么做的。万分感谢。"
+    },
+    {
+        "Id": 7464292,
+        "Title": "用url的地址将图片设置为背景图片",
+        "Body": "这是代码 img 如何在这个图片上添加文字呢？？？"
+    },
+    {
+        "Id": 7464293,
+        "Title": "为什么document.write()我往里填123也可以在网页中显示，123是字符串么",
+        "Body": "小白，希望能用别太高深的话解释，我百度说这个方法里应该写字符串"
+    },
+    {
+        "Id": 7464296,
+        "Title": "求会Java的看看，列表不太懂",
+        "Body": "已知Cost（支出）类内具有Id（人员编号）、name（姓名）、month（月份）、money（消费的钱款数）等属性，写一个程序产生一个“张三”对象以及此人2019年每月支出放进一个列表（List）之中，然后统计此人的每月消费总和。"
+    },
+    {
+        "Id": 7464298,
+        "Title": "java编写计算器，实现数字的加、减、乘、除、开根号、去百分比、倒数、正负、清空等功能",
+        "Body": "实现数字的加、减、乘、除、开根号、去百分比、倒数、正负、清空等功能"
+    },
+    {
+        "Id": 7464300,
+        "Title": "Javaweb学习疑惑",
+        "Body": "最近学到了Java web，看有的评论说…用不到什么的…我需要大致了解还是什么呢"
+    },
+    {
+        "Id": 7464302,
+        "Title": "C语言 如何使用三个浮点指针作为参数，并按升序对它们指向的值进行排序 jiujiu我吧",
+        "Body": "请问如何使用三个浮点指针作为参数，并按升序对它们指向的值进行排序。求大佬可以帮我编程一下，让我直到应该怎么去做。万分感谢！"
+    },
+    {
+        "Id": 7464306,
+        "Title": "为什么我怎么调R1发光二极管总是1.66V?",
+        "Body": ""
+    },
+    {
+        "Id": 7464308,
+        "Title": "如何在同步代码中获取到 Spring WebFlux Mono 类型的返回值？",
+        "Body": "在工作中我遇到了这样一个场景：公司内部使用了两个 OLAP 引擎/数据库，一个是 ElasticSearch，存储原始数据；一个是 Doris，对ES中的数据按天进行了统计，因此查询效率会比 ES 好。现在有个BI工具页面有一堆图表，如果调用后端查询ES接口的参数中带有关键词检索则通过网关转发到ES查询，如果不带关键词，则重写路径地址，路由到一个查询 Doris 查询统计好的数据的接口，以实现性能和功能的平衡。为了应对这个需求，我在 Spring Gateway 网关中继承了 AbstractGatewayFilterFactory 自定义了一个过滤器，当解析到参数列表中指定字段不包含关键词时重写路径地址，转发到另一个查询 Doris 的接口。这个自定义过滤器的实现的核心代码如下："
+    },
+    {
+        "Id": 7464309,
+        "Title": "C语言 如何使用反转数组，jiujiu我吧，dalao！",
+        "Body": "请问如何使用反转数组来完成这道问题，请大佬帮忙编程一下让我学习如何完成这个。万分感谢"
+    },
+    {
+        "Id": 7464311,
+        "Title": "java设置setDate(int，Date)报错",
+        "Body": "The method setDate(int, java.sql.Date) in the type PreparedStatement is not applicable for the arguments (int, java.util.Date)"
+    },
+    {
+        "Id": 7464316,
+        "Title": "HBuilderX软件修改保存代码浏览器自动刷新出现效果",
+        "Body": "我用HBuilderX软件写的代码写完以后我需要查看效果 但是我写完了以后浏览器需要我自己手动点刷新 而不是我保存就自动刷新页面 出现新效果 以前都能自动刷新页面 修改了代码后页面自动刷新效果 用的是绿色版本的 有什么办法可以解决嘛 谢谢"
+    },
+    {
+        "Id": 7464318,
+        "Title": "怎么通过域名访问我已经部署到服务器的node项目",
+        "Body": "我有已经备案过的域名了，已经解析到服务器了，现在通过Mobaxterm 部署了一个node环境的小项目到服务器了，可以通过ip➕端口访问，但是想设置成通过我的域名访问，如何操作？"
+    },
+    {
+        "Id": 7464319,
+        "Title": "fiddler抓取部分无法代理抓包app的修改响应问题",
+        "Body": "本人IOS用户，使用fiddler进行抓包某ios app，使用Thor、HTTP Catcher（锤子、网球）也尝试了均无法抓取数据，使用Shadowrocket代理功能转发到fiddler，fiddler成功显示该app数据。但是我想修改response数据，并让app成功显示修改后的对应内容。我使用fiddler的Auto response，可以修改数据，但是app没有反应，还是正常响应的内容，并没有修改。拜托各位大佬，有什么解决办法吗？"
+    },
+    {
+        "Id": 7464322,
+        "Title": "学生点名系统的设计与实现",
+        "Body": "要求： （1）读入外部文件存储的学生信息，包括姓名，学号； （2）可选择学生班级，对不同班级的学生分别进行点名； （3）对学生按在班编号显示名字，进行点名，接收键盘输入的点名时间和能代表缺课、请假、正常的点名信息； （4）查询各班学生的历史点名信息。 （5）统计学生的出勤情况。 （6）提供交互界面，以便人机交互。"
+    },
+    {
+        "Id": 7464301,
+        "Title": "",
+        "Body": ""
+    },
+    {
+        "Id": 7464301,
+        "Title": "",
+        "Body": ""
+    }
+]
